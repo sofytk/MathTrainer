@@ -1,18 +1,13 @@
 package com.example.mathbrainer;
 
-import static com.example.mathbrainer.R.id.sol3;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mathbrainer.databinding.ActivityMainBinding;
-
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;

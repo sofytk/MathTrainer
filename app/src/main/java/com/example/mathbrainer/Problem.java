@@ -1,6 +1,7 @@
 package com.example.mathbrainer;
 
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Problem {
@@ -21,10 +22,10 @@ public class Problem {
         String b1 = "";
         String sign = getRandomSign();
 
-        if (sign == "+") result = a + b;
-        else if (sign == "-") result = a - b;
-        else if (sign == "*") result = a * b;
-        else result = a / b;
+        if (sign == "+") result =  a + b;
+        else if (sign == "-") result =  a - b;
+        else if (sign == "*") result =  a * b;
+        else result = a/b;
 
         if (b<0)  b1 = "(" + b + ")";
         else b1 = b + "";
@@ -33,11 +34,11 @@ public class Problem {
     }
 
     public int getNoiseResult() {
-        return result + getRandom(-7, 7);
+        return result + getRandom(-10, 10);
     }
 
     private String getRandomSign() {
-        int sign = getRandom(1, 4);
+        int sign = getRandom(1, 5);
         String stringSign = "";
         switch (sign) {
             case 1:
